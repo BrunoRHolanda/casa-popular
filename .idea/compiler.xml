@@ -9,10 +9,6 @@
         <module name="ms-popular-home" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="desafio-digix-casa-popular" target="1.5" />
-      <module name="ms-popular-home" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
