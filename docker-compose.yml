@@ -1,0 +1,56 @@
+version: '3'
+services:
+  ms-popular-home:
+    build: ./ms-popular-home
+    container_name: ms_popular_home
+    entrypoint: dockerize -wait tcp://db:5432 -timeout 40s /entrypoint.sh
+    restart: always
+    volumes:
+      - ./ms-popular-home:/home/spring/ms-popular-home
+    networks:
+      - challenge-network
+    ports:
+      - "8100:8091"
+    depends_on:
+      - db
+  db:
+    build: ./challenge-db
+    container_name: challenge_db
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: '1234'
+      POSTGRES_DB: 'popular_home_db'
+    ports:
+      - "8101:5432"
+    volumes:
+      - challenge-db:/var/lib/postgresql/data
+    networks:
+      - challenge-network
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: challenge_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
+      PGADMIN_DEFAULT_PASSWORD: "1234"
+    ports:
+      - "8102:80"
+    depends_on:
+      - db
+    networks:
+      - challenge-network
+  redis:
+    image: redis:6.2.6-alpine
+    container_name: challenge_redis
+    volumes:
+      - challenge-redis:/data
+    command: redis-server --appendonly yes --requirepass challenge
+    ports:
+      - "8103:6379"
+    networks:
+      - challenge-network
+networks:
+  challenge-network:
+    driver: bridge
+volumes:
+  challenge-db:
+  challenge-redis:

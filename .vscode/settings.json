@@ -1,0 +1,4 @@
+{
+    "maven.executable.preferMavenWrapper": true,
+    "java.trace.server":"verbose",
+}
