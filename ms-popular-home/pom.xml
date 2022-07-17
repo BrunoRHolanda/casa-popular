@@ -11,6 +11,7 @@
 	<groupId>com.digix.challenge.holanda</groupId>
 	<artifactId>ms-popular-home</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>ms-popular-home</name>
 	<description>Microserviço para cadastro de famílias no programa</description>
 	<properties>
