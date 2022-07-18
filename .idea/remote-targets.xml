@@ -11,6 +11,11 @@
             <option name="homePath" value="/home/bruno/.jdks/corretto-17.0.3" />
           </config>
         </ContributedStateBase>
+        <ContributedStateBase type="MavenRuntime">
+          <config>
+            <option name="homePath" value="/opt/apache-maven-3.8.6/bin/mvn" />
+          </config>
+        </ContributedStateBase>
       </target>
     </targets>
   </component>

@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Cpf.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Cpf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Suitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Suitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/exceptions/InvalidIncomeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/exceptions/InvalidIncomeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/ValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/ValueObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/ZipCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/valueobjects/ZipCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/api/v1/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/api/v1/SimpleController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +57,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "b84fe3d0b53d80375adf962bc3427440"
   }
 }]]></component>
   <component name="RunManager" selected="Maven.ms-popular-home [install]">
@@ -98,7 +101,7 @@
             <option name="goals">
               <list>
                 <option value="install" />
-                <option value="-Dmaven.repo.local=/home/bruno/projetos/desafio-digix-casa-popular/ms-popular-home/.m2" />
+                <option value="-Dmaven.repo.local=ms-popular-home/.m2" />
                 <option value="-DskipTests" />
               </list>
             </option>
@@ -135,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658080974037</updated>
       <workItem from="1658080976908" duration="8718000" />
+      <workItem from="1658153917460" duration="12248000" />
     </task>
     <servers />
   </component>

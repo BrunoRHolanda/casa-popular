@@ -13,11 +13,10 @@ public class Email implements ValueObject<String> {
     @Override
     public boolean validate() {
         try {
-            Pattern pattern = Pattern.compile("^(.+)@(.+)$");
-
-            Matcher matcher = pattern.matcher(this.email);
-
-            return matcher.matches();
+            return Pattern
+                    .compile("^(.+)@(.+)$")
+                    .matcher(this.email)
+                    .matches();
         } catch (Exception e) {
             return false;
         }
