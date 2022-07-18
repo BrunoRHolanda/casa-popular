@@ -16,4 +16,8 @@ public class ZipCode implements ValueObject<String> {
     public String make() {
         return this.zipCode;
     }
+
+    public String toString() {
+        return this.make();
+    }
 }

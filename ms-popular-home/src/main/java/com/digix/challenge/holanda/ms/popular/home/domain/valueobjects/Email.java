@@ -27,4 +27,8 @@ public class Email implements ValueObject<String> {
     public String make() {
         return this.email;
     }
+
+    public String toString() {
+        return this.make();
+    }
 }

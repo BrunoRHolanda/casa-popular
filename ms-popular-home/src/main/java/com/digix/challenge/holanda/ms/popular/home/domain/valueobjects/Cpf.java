@@ -60,4 +60,7 @@ public class Cpf implements ValueObject<String> {
     public String make() {
         return this.cpf;
     }
+    public String toString() {
+        return this.make();
+    }
 }

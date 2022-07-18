@@ -24,4 +24,8 @@ public class Phone implements ValueObject<String> {
     public String make() {
         return this.phoneNumber;
     }
+
+    public String toString() {
+        return this.make();
+    }
 }
