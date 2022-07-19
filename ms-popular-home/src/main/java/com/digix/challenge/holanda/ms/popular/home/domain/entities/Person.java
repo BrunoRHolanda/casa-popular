@@ -28,7 +28,6 @@ public class Person extends Entity {
     public Person(@NonNull String name, @NonNull Integer age) {
         this.name = name;
         this.age = age;
-        this.cpf = cpf;
     }
 
     public Person(@NonNull String name, @NonNull Integer age, @NonNull Cpf cpf, UUID id, boolean active, Date createdAt, Date updatedAt) {
@@ -41,8 +40,10 @@ public class Person extends Entity {
 
     @Override
     public void validate() throws ValidationException {
-        if (!this.cpf.validate()) {
-            throw new InvalidCpfException();
+        if (this.cpf != null) {
+            if (!this.cpf.validate()) {
+                throw new InvalidCpfException();
+            }
         }
 
         if (!Pattern.compile("[A-Z][a-z]* [A-Z][a-z]*").matcher(this.name).matches()) {
