@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="" />
+    <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-db/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-db/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/api/v1/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/api/v1/SimpleController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,6 +55,14 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "b84fe3d0b53d80375adf962bc3427440"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Maven.ms-popular-home [install]">
