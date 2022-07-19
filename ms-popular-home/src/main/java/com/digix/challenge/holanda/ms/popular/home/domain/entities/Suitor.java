@@ -26,10 +26,12 @@ public class Suitor extends Person {
     }
 
     public Suitor(@NonNull Phone phone, @NonNull Email email, String name, int age, Cpf cpf) {
-        super(name, age, cpf);
+        super(name, age);
 
         this.phone = phone;
         this.email = email;
+
+        this.setCpf(cpf);
     }
 
     public Suitor(UUID id, boolean active, Date createdAt, Date updatedAt, @NonNull Phone phone, @NonNull Email email, String name, int age, Cpf cpf) {

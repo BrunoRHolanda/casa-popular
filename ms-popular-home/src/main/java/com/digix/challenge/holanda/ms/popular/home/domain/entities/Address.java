@@ -29,7 +29,7 @@ public class Address extends Entity {
 
     }
 
-    public Address( @NonNull District district,  @NonNull String street,  @NonNull ZipCode zipCode) {
+    public Address(@NonNull District district,  @NonNull String street,  @NonNull ZipCode zipCode) {
         this.district = district;
         this.street = street;
         this.zipCode = zipCode;

@@ -18,20 +18,20 @@ public class Person extends Entity {
     private String name;
     @NonNull
     private Integer age;
-    @NonNull
+
     private Cpf cpf;
 
-    Person() {
+    public Person() {
 
     }
 
-    Person(@NonNull String name, @NonNull Integer age, @NonNull Cpf cpf) {
+    public Person(@NonNull String name, @NonNull Integer age) {
         this.name = name;
         this.age = age;
         this.cpf = cpf;
     }
 
-    Person(@NonNull String name, @NonNull Integer age, @NonNull Cpf cpf, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Person(@NonNull String name, @NonNull Integer age, @NonNull Cpf cpf, UUID id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.name = name;
