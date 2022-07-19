@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" afterDir="false" />
-    </list>
+    <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658080974037</updated>
       <workItem from="1658080976908" duration="8718000" />
-      <workItem from="1658153917460" duration="28697000" />
+      <workItem from="1658153917460" duration="29860000" />
     </task>
     <servers />
   </component>
