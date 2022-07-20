@@ -27,7 +27,7 @@ public abstract class BaseRule extends Entity implements Rule {
         this.type = type;
     }
 
-    public BaseRule(@NonNull Integer code, @NonNull RuleType type, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public BaseRule(@NonNull Integer code, @NonNull RuleType type, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.code = code;

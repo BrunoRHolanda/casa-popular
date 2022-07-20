@@ -25,7 +25,7 @@ public class City extends Locale {
         this.state = state;
     }
 
-    public City(@NonNull State state, @NonNull String name, @NonNull Integer code, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public City(@NonNull State state, @NonNull String name, @NonNull Integer code, String id, boolean active, Date createdAt, Date updatedAt) {
         super(name, code, id, active, createdAt, updatedAt);
 
         this.state = state;

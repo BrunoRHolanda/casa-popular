@@ -26,7 +26,7 @@ public class FamilySelection extends Entity {
         this.selection = selection;
     }
 
-    public FamilySelection(@NonNull Family family, @NonNull Selection selection, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public FamilySelection(@NonNull Family family, @NonNull Selection selection, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.family = family;

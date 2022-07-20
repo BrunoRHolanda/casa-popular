@@ -39,7 +39,7 @@ public class Selection extends Entity {
         this.rules = rules;
     }
 
-    public Selection(@NonNull Integer ordinance, @NonNull City city, @NonNull Date start, @NonNull Date end, @NonNull Map<RuleType, Rule> rules, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Selection(@NonNull Integer ordinance, @NonNull City city, @NonNull Date start, @NonNull Date end, @NonNull Map<RuleType, Rule> rules, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.ordinance = ordinance;

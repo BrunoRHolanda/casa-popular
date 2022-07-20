@@ -1,8 +1,11 @@
 package com.digix.challenge.holanda.ms.popular.home.domain.valueobjects;
 
+import lombok.Getter;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Getter
 public class Email implements ValueObject<String> {
     private final String email;
 

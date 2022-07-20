@@ -10,7 +10,7 @@ public class IncomeRule  extends BaseRule {
         super(1, RuleType.INCOME);
     }
 
-    public IncomeRule(UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public IncomeRule(String id, boolean active, Date createdAt, Date updatedAt) {
         super(1, RuleType.INCOME, id, active, createdAt, updatedAt);
     }
 

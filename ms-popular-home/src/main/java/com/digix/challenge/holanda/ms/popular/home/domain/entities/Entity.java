@@ -10,7 +10,7 @@ import java.util.UUID;
 
 @Data
 public abstract class Entity {
-    private UUID id;
+    private String id;
 
     private boolean active;
     private Date createdAt;
@@ -20,7 +20,7 @@ public abstract class Entity {
 
     }
 
-    public Entity(UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Entity(String id, boolean active, Date createdAt, Date updatedAt) {
         this.id = id;
         this.active = active;
         this.createdAt = createdAt;

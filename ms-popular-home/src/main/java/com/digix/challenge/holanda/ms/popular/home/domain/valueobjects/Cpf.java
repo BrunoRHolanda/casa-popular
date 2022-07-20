@@ -1,7 +1,10 @@
 package com.digix.challenge.holanda.ms.popular.home.domain.valueobjects;
 
+import lombok.Getter;
+
 import java.util.InputMismatchException;
 
+@Getter
 public class Cpf implements ValueObject<String> {
     private final String cpf;
 

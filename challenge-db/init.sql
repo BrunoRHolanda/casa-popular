@@ -98,15 +98,18 @@ CREATE TABLE public.person (
 
 CREATE TABLE public.spouse (
                                id VARCHAR(255) NOT NULL,
+                               person_id VARCHAR(255) NOT NULL,
                                active BOOLEAN NOT NULL,
                                created_at TIMESTAMP NOT NULL,
                                updated_at TIMESTAMP NOT NULL,
+                               id_1 VARCHAR(255) NOT NULL,
                                CONSTRAINT spouse_pk PRIMARY KEY (id)
 );
 
 
 CREATE TABLE public.suitor (
                                id VARCHAR(255) NOT NULL,
+                               person_id VARCHAR(255) NOT NULL,
                                phone VARCHAR(255) NOT NULL,
                                email VARCHAR(255) NOT NULL,
                                active BOOLEAN NOT NULL,
@@ -118,8 +121,6 @@ CREATE TABLE public.suitor (
 
 CREATE TABLE public.family (
                                id VARCHAR(255) NOT NULL,
-                               suitor_id VARCHAR(255) NOT NULL,
-                               spouse_id VARCHAR(255) NOT NULL,
                                address_id VARCHAR(255) NOT NULL,
                                active BOOLEAN NOT NULL,
                                created_at TIMESTAMP NOT NULL,
@@ -205,14 +206,14 @@ ALTER TABLE public.family ADD CONSTRAINT address_family_fk
         NOT DEFERRABLE;
 
 ALTER TABLE public.suitor ADD CONSTRAINT person_suitor_fk
-    FOREIGN KEY (id)
+    FOREIGN KEY (person_id)
         REFERENCES public.person (id)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
         NOT DEFERRABLE;
 
 ALTER TABLE public.spouse ADD CONSTRAINT person_spouse_fk
-    FOREIGN KEY (id)
+    FOREIGN KEY (person_id)
         REFERENCES public.person (id)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
@@ -226,14 +227,14 @@ ALTER TABLE public.dependents ADD CONSTRAINT person_dependents_fk
         NOT DEFERRABLE;
 
 ALTER TABLE public.family ADD CONSTRAINT spouse_family_fk
-    FOREIGN KEY (spouse_id)
+    FOREIGN KEY (id)
         REFERENCES public.spouse (id)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION
         NOT DEFERRABLE;
 
 ALTER TABLE public.family ADD CONSTRAINT suitor_family_fk
-    FOREIGN KEY (suitor_id)
+    FOREIGN KEY (id)
         REFERENCES public.suitor (id)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION

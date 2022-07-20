@@ -1,5 +1,8 @@
 package com.digix.challenge.holanda.ms.popular.home.domain.valueobjects;
 
+import lombok.Getter;
+
+@Getter
 public class Phone implements ValueObject<String> {
     private final String phoneNumber;
 

@@ -27,7 +27,7 @@ public class Locale extends Entity {
         this.code = code;
     }
 
-    public Locale(@NonNull String name, @NonNull Integer code, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Locale(@NonNull String name, @NonNull Integer code, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.name = name;

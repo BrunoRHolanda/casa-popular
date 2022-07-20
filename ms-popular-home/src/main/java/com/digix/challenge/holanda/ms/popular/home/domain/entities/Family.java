@@ -19,7 +19,7 @@ public class Family  extends Entity {
     @NonNull
     private Spouse spouse;
 
-    private Map<UUID, Person> dependents;
+    private Map<String, Person> dependents;
 
     @NonNull
     private Address address;
@@ -38,7 +38,7 @@ public class Family  extends Entity {
         this.income = income;
     }
 
-    public Family(@NonNull Suitor suitor, @NonNull Spouse spouse, @NonNull Address address, @NonNull Float income, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Family(@NonNull Suitor suitor, @NonNull Spouse spouse, @NonNull Address address, @NonNull Float income, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.suitor = suitor;

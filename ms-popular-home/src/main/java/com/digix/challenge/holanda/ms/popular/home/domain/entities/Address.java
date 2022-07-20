@@ -35,7 +35,7 @@ public class Address extends Entity {
         this.zipCode = zipCode;
     }
 
-    public Address(@NonNull District district, @NonNull String street, @NonNull Integer number, @NonNull ZipCode zipCode, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Address(@NonNull District district, @NonNull String street, @NonNull Integer number, @NonNull ZipCode zipCode, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.district = district;

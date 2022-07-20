@@ -34,11 +34,11 @@ public class Suitor extends Person {
         this.setCpf(cpf);
     }
 
-    public Suitor(UUID id, boolean active, Date createdAt, Date updatedAt, @NonNull Phone phone, @NonNull Email email, String name, int age, Cpf cpf) {
+    public Suitor(String id, boolean active, Date createdAt, Date updatedAt, @NonNull String phone, @NonNull String email, String name, int age, String cpf) {
         super(name, age, cpf, id, active, createdAt, updatedAt);
 
-        this.phone = phone;
-        this.email = email;
+        this.phone = new Phone(phone);
+        this.email = new Email(email);
     }
 
     @Override

@@ -23,7 +23,7 @@ public class District extends Locale {
         this.city = city;
     }
 
-    public District(@NonNull City city, @NonNull String name, @NonNull Integer code, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public District(@NonNull City city, @NonNull String name, @NonNull Integer code, String id, boolean active, Date createdAt, Date updatedAt) {
         super(name, code, id, active, createdAt, updatedAt);
 
         this.city = city;

@@ -19,6 +19,6 @@ RUN chmod a+x /entrypoint.sh
 RUN useradd -ms /bin/bash spring
 RUN usermod -u 1000 spring
 
-WORKDIR /home/spring/ms-popular-home
+WORKDIR /home/spring/desafio-digix-casa-popular/ms-popular-home
 
 USER spring

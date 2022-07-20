@@ -6,7 +6,7 @@ services:
     entrypoint: dockerize -wait tcp://db:5432 -timeout 40s /entrypoint.sh
     restart: always
     volumes:
-      - ./ms-popular-home:/home/spring/ms-popular-home
+      - .:/home/spring/desafio-digix-casa-popular
     networks:
       - challenge-network
     ports:

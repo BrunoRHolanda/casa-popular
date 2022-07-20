@@ -11,7 +11,7 @@ public class DependentsRule extends BaseRule {
         super(2, RuleType.DEPENDENTS);
     }
 
-    public DependentsRule(UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public DependentsRule(String id, boolean active, Date createdAt, Date updatedAt) {
         super(2, RuleType.DEPENDENTS, id, active, createdAt, updatedAt);
     }
 

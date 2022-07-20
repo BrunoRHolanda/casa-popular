@@ -30,12 +30,12 @@ public class Person extends Entity {
         this.age = age;
     }
 
-    public Person(@NonNull String name, @NonNull Integer age, @NonNull Cpf cpf, UUID id, boolean active, Date createdAt, Date updatedAt) {
+    public Person(@NonNull String name, @NonNull Integer age, @NonNull String cpf, String id, boolean active, Date createdAt, Date updatedAt) {
         super(id, active, createdAt, updatedAt);
 
         this.name = name;
         this.age = age;
-        this.cpf = cpf;
+        this.cpf = new Cpf(cpf);
     }
 
     @Override
