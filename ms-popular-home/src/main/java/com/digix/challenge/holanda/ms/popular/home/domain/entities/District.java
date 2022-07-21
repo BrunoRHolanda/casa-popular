@@ -1,37 +1,37 @@
 package com.digix.challenge.holanda.ms.popular.home.domain.entities;
 
+import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.InvalidCodeException;
+import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.InvalidNameException;
 import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.ValidationException;
 import lombok.Data;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 import java.util.Date;
 import java.util.UUID;
+import java.util.regex.Pattern;
 
 @Data
-public class District extends Locale {
-
+@RequiredArgsConstructor
+public class District implements Entity {
     @NonNull
     private City city;
 
-    public District() {
+    @NonNull
+    private String name;
 
-    }
-
-    public District(@NonNull City city, @NonNull String name, @NonNull Integer code) {
-        super(name, code);
-
-        this.city = city;
-    }
-
-    public District(@NonNull City city, @NonNull String name, @NonNull Integer code, String id, boolean active, Date createdAt, Date updatedAt) {
-        super(name, code, id, active, createdAt, updatedAt);
-
-        this.city = city;
-    }
+    @NonNull
+    private Integer code;
 
     @Override
     public void validate() throws ValidationException {
-        super.validate();
+//        if (!Pattern.compile("[A-Z][a-z]*").matcher(this.name).matches()) {
+//            throw new InvalidNameException();
+//        }
+
+        if (this.code < 0) {
+            throw new InvalidCodeException();
+        }
 
         this.city.validate();
     }

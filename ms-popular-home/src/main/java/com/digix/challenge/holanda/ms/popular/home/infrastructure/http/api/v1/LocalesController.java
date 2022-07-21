@@ -12,6 +12,7 @@ import com.digix.challenge.holanda.ms.popular.home.application.responses.StateRe
 import com.digix.challenge.holanda.ms.popular.home.application.usecases.CreateCityUseCase;
 import com.digix.challenge.holanda.ms.popular.home.application.usecases.CreateDistrictUseCase;
 import com.digix.challenge.holanda.ms.popular.home.application.usecases.CreateStateUseCase;
+import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.ValidationException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,12 +34,12 @@ public class LocalesController {
     }
 
     @PostMapping(path = "/api/v1/locales/state")
-    public StateResponse post(@RequestBody StateRequest stateRequest) {
+    public StateResponse post(@RequestBody StateRequest stateRequest) throws ValidationException {
         return (new CreateStateUseCase(this.stateRepository)).handle(stateRequest);
     }
 
     @PostMapping(path = "/api/v1/locales/city")
-    public CityResponse post(@RequestBody CityRequest cityRequest) {
+    public CityResponse post(@RequestBody CityRequest cityRequest) throws ValidationException {
         return (
                 new CreateCityUseCase(
                         this.cityRepository,
@@ -48,7 +49,7 @@ public class LocalesController {
     }
 
     @PostMapping(path = "/api/v1/locales/district")
-    public DistrictResponse post(@RequestBody DistrictRequest districtRequest) {
+    public DistrictResponse post(@RequestBody DistrictRequest districtRequest) throws ValidationException {
         return (
                 new CreateDistrictUseCase(
                         this.cityRepository,

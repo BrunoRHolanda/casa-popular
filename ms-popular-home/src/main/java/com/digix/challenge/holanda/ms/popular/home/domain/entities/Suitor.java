@@ -21,10 +21,6 @@ public class Suitor extends Person {
     @NonNull
     private Email email;
 
-    public Suitor() {
-        super();
-    }
-
     public Suitor(@NonNull Phone phone, @NonNull Email email, String name, int age, Cpf cpf) {
         super(name, age);
 
@@ -32,13 +28,6 @@ public class Suitor extends Person {
         this.email = email;
 
         this.setCpf(cpf);
-    }
-
-    public Suitor(String id, boolean active, Date createdAt, Date updatedAt, @NonNull String phone, @NonNull String email, String name, int age, String cpf) {
-        super(name, age, cpf, id, active, createdAt, updatedAt);
-
-        this.phone = new Phone(phone);
-        this.email = new Email(email);
     }
 
     @Override

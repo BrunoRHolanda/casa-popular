@@ -8,10 +8,6 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode(callSuper = true)
 public class Spouse  extends Person {
-    public Spouse() {
-        super();
-    }
-
     public Spouse(String name, int age, Cpf cpf) {
         super(name, age);
 

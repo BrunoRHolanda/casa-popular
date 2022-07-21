@@ -15,6 +15,8 @@ public class Family extends Model {
     private String spouseId;
     @NonNull
     private String suitorId;
+    @NonNull
+    private Float income;
 
     @MappedCollection(idColumn = "family_id", keyColumn = "id")
     private Set<Dependents> dependents = new HashSet<>();

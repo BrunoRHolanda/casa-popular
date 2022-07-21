@@ -5,11 +5,13 @@ import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.UnrelatedRu
 import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.ValidationException;
 import lombok.Data;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 import java.util.*;
 
 @Data
-public class Selection extends Entity {
+@RequiredArgsConstructor
+public class Selection implements Entity {
     @NonNull
     private Integer ordinance;
 
@@ -26,28 +28,6 @@ public class Selection extends Entity {
     private Map<RuleType, Rule> rules;
 
     private ArrayList<FamilySelection> familySelections;
-
-    public Selection() {
-
-    }
-
-    public Selection(@NonNull Integer ordinance, @NonNull City city, @NonNull Date start, @NonNull Date end, @NonNull Map<RuleType, Rule> rules) {
-        this.ordinance = ordinance;
-        this.city = city;
-        this.start = start;
-        this.end = end;
-        this.rules = rules;
-    }
-
-    public Selection(@NonNull Integer ordinance, @NonNull City city, @NonNull Date start, @NonNull Date end, @NonNull Map<RuleType, Rule> rules, String id, boolean active, Date createdAt, Date updatedAt) {
-        super(id, active, createdAt, updatedAt);
-
-        this.ordinance = ordinance;
-        this.city = city;
-        this.start = start;
-        this.end = end;
-        this.rules = rules;
-    }
 
     public void insertRule(Rule rule) {
         this.rules.put(rule.getType(), rule);

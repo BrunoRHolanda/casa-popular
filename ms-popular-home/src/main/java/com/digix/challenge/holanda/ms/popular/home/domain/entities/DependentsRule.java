@@ -11,10 +11,6 @@ public class DependentsRule extends BaseRule {
         super(2, RuleType.DEPENDENTS);
     }
 
-    public DependentsRule(String id, boolean active, Date createdAt, Date updatedAt) {
-        super(2, RuleType.DEPENDENTS, id, active, createdAt, updatedAt);
-    }
-
     @Override
     public int defineScore(Family family) {
         AtomicInteger counter = new AtomicInteger();

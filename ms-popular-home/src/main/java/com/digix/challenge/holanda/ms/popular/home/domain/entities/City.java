@@ -5,35 +5,32 @@ import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.InvalidName
 import com.digix.challenge.holanda.ms.popular.home.domain.exceptions.ValidationException;
 import lombok.Data;
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
-import java.util.Date;
-import java.util.UUID;
+import java.util.regex.Pattern;
 
 @Data
-public class City extends Locale {
+@RequiredArgsConstructor
+public class City implements Entity {
 
     @NonNull
     private State state;
 
-    public City() {
+    @NonNull
+    private String name;
 
-    }
-
-    public City(@NonNull State state, @NonNull String name, @NonNull Integer code) {
-        super(name, code);
-
-        this.state = state;
-    }
-
-    public City(@NonNull State state, @NonNull String name, @NonNull Integer code, String id, boolean active, Date createdAt, Date updatedAt) {
-        super(name, code, id, active, createdAt, updatedAt);
-
-        this.state = state;
-    }
+    @NonNull
+    private Integer code;
 
     @Override
     public void validate() throws ValidationException {
-        super.validate();
+//        if (!Pattern.compile("[A-Z][a-z]+").matcher(this.name).matches()) {
+//            throw new InvalidNameException();
+//        }
+
+        if (this.code < 0) {
+            throw new InvalidCodeException();
+        }
 
         this.state.validate();
     }

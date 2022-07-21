@@ -12,40 +12,20 @@ import java.util.Map;
 import java.util.UUID;
 
 @Data
-public class Family  extends Entity {
+public class Family  implements Entity {
     @NonNull
     private Suitor suitor;
 
     @NonNull
     private Spouse spouse;
 
-    private Map<String, Person> dependents;
+    private Map<Integer, Person> dependents;
 
     @NonNull
     private Address address;
 
     @NonNull
     private Float income;
-
-    public Family() {
-
-    }
-
-    public Family(@NonNull Suitor suitor, @NonNull Spouse spouse, @NonNull Address address, @NonNull Float income) {
-        this.suitor = suitor;
-        this.spouse = spouse;
-        this.address = address;
-        this.income = income;
-    }
-
-    public Family(@NonNull Suitor suitor, @NonNull Spouse spouse, @NonNull Address address, @NonNull Float income, String id, boolean active, Date createdAt, Date updatedAt) {
-        super(id, active, createdAt, updatedAt);
-
-        this.suitor = suitor;
-        this.spouse = spouse;
-        this.address = address;
-        this.income = income;
-    }
 
     public void addDependent(Person dependent) throws ValidationException {
         dependent.validate();
@@ -54,13 +34,13 @@ public class Family  extends Entity {
             this.dependents = new HashMap<>();
         }
 
-        this.dependents.put(dependent.getId(), dependent);
+        this.dependents.put(dependent.hashCode(), dependent);
     }
 
     public void removeDependent(Person dependent) throws ValidationException {
         assert this.dependents != null;
 
-        if (!this.dependents.containsKey(dependent.getId())) {
+        if (!this.dependents.containsKey(dependent.hashCode())) {
             throw new UnrelatedDependentException();
         }
     }
@@ -70,7 +50,7 @@ public class Family  extends Entity {
             return false;
         }
 
-        return this.dependents.containsKey(dependent.getId());
+        return this.dependents.containsKey(dependent.hashCode());
     }
 
     @Override

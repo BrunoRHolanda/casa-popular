@@ -5,6 +5,8 @@ public abstract class BusinessLogicException extends Exception {
 
     public BusinessLogicException(String message, int code) {
         super(message);
+
+        this.code = code;
     }
 
     public int getCode() {

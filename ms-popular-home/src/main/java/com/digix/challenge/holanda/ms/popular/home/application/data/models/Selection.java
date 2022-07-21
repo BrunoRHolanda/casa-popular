@@ -31,4 +31,8 @@ public class Selection extends Model {
     public void addRule(Rule rule) {
         this.selectionRules.add(new SelectionRule(rule.getId()));
     }
+
+    public void addRule(String rule) {
+        this.selectionRules.add(new SelectionRule(rule));
+    }
 }
