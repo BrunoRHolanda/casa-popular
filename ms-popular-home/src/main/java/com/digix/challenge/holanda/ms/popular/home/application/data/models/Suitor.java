@@ -12,6 +12,6 @@ public class Suitor extends Model {
     @NonNull
     private String phone;
 
-    @MappedCollection(keyColumn = "person_id", idColumn = "id")
-    private Person person;
+    @NonNull
+    private String personId;
 }
