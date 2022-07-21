@@ -60,7 +60,7 @@ make m2-install-catalog
 | Api Gateway     | 8000 | Não desenvolvido |
 
 ### Diagramas:
-
+[docs](https://github.com/BrunoRHolanda/desafio-digix-casa-popular/tree/main/docs)
 #### Arquitetura
 <img src="https://github.com/BrunoRHolanda/desafio-digix-casa-popular/blob/main/docs/arch.png">
 
