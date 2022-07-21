@@ -28,6 +28,10 @@ public class Selection extends Model {
     public void addFamily(Family family) {
         this.familySelections.add(new FamilySelection(family.getId()));
     }
+
+    public void addFamily(String family) {
+        this.familySelections.add(new FamilySelection(family));
+    }
     public void addRule(Rule rule) {
         this.selectionRules.add(new SelectionRule(rule.getId()));
     }

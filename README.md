@@ -1,11 +1,11 @@
 # Desafio Digix Casa Popular
 Seleção de famílias aptas a ganharem uma casa popular.
 
-Conta com 2 microserviços um para manter os cadastros das famílias (ms-popular-home - Java 17)e outro para listagem ordenada por pontuação das famílias (ms-catalog - Java 17).
+Conta com 2 microserviços um para manter os cadastros das famílias (ms-popular-home - Java 17)e outro para listagem ordenada por pontuação das famílias (ms-benefited-catalog - Java 17).
 
-Para centralizar as requisições também foi criado um API Gateway em nodejs.
+Para centralizar as requisições também foi pensado em um API Gateway em nodejs.
 
-Já para agilizar as requisições de listagem foi utilizado o redis como banco de cache.
+Já para agilizar as requisições de listagem foi pensado em utilizar redis como banco de cache.
 
 E para observabilidade e auditoria foi implantando uma integração com o newrelic.
 ### Requisitos:
@@ -23,19 +23,22 @@ make install
 docker-compose up -d
 ```
 ```bash
-make start
+make start-home
+```
+```bash
+make start-catalog
 ```
 
 Configure seu ide ou editor de preferência para apontar o maven repositório para a pasta .m2 na raiz do projeto
 
 ### Instalar novas dependências no MS Popular Home
 ```bash
-make home-m2-install
+make m2-install-home
 ```
 
 ### Instalar novas dependências no MS Catalog
 ```bash
-make catalog-m2-install
+make m2-install-catalog
 ```
 
 ### Project Links:
@@ -51,9 +54,9 @@ make catalog-m2-install
 | MS Popular Home | 8000 | Desenvolvido  |
 | Postgres        | 8101 | Desenvolvido |
 | Pgadmin         | 8102 | Desenvolvido |
-| Redis           | 8103 | Desenvolvido |
-| MongoDB         | 8104 | Não desenvolvido |
-| MS Catalog      | 8105 | Não desenvolvido |
+| Redis           | 8103 | Não desenvolvido |
+| MongoDB         | 8104 | Desenvolvido |
+| MS Catalog      | 8105 | Desenvolvido |
 | Api Gateway     | 8000 | Não desenvolvido |
 
 ### Diagramas:

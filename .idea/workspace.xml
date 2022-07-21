@@ -5,34 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="548dac8d-73fc-4ce2-9538-052bb68a6780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9c44a0c-ff03-4912-ba19-8464750f4ff1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9c44a0c-ff03-4912-ba19-8464750f4ff1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9c44a0c-ff03-4912-ba19-8464750f4ff1/storage_v2/_src_/database/popular_home_db.eAwmUQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9c44a0c-ff03-4912-ba19-8464750f4ff1/storage_v2/_src_/database/popular_home_db.eAwmUQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-benefited-catalog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/data/models/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/data/models/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/data/models/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/data/models/Selection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateCityUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateCityUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateDistrictUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateDistrictUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateStateUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/CreateStateUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/application/usecases/UseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/BaseRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/BaseRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/DependentsRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/DependentsRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/District.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/District.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Family.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/FamilySelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/FamilySelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/IncomeRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/IncomeRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Locale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Rule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Selection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Spouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Spouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Suitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/entities/Suitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/exceptions/BusinessLogicException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/domain/exceptions/BusinessLogicException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/http/api/v1/LocalesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/http/api/v1/LocalesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/http/api/v1/SimpleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/http/api/v1/SelectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-popular-home/src/main/java/com/digix/challenge/holanda/ms/popular/home/infrastructure/http/api/v1/SelectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +55,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "//wsl$/Ubuntu/home/bruno/projetos/desafio-digix-casa-popular/docs",
+    "jdk.selected.JAVA_MODULE": "17 (WSL)",
+    "last_opened_file_path": "//wsl$/Ubuntu/home/bruno/projetos/desafio-digix-casa-popular/ms-benefited-catalog/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -91,8 +75,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\bruno\projetos\desafio-digix-casa-popular\ms-benefited-catalog\src\main\resources" />
+      <recent name="\\wsl$\Ubuntu\home\bruno\projetos\desafio-digix-casa-popular\ms-benefited-catalog" />
       <recent name="\\wsl$\Ubuntu\home\bruno\projetos\desafio-digix-casa-popular\docs" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.digix.challenge.holanda.ms.benefited.catalog.configuration" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Maven.ms-popular-home [install]">
     <configuration name="desafio-digix-casa-popular [install]" type="MavenRunConfiguration" factoryName="Maven">
@@ -149,6 +145,13 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ms-benefited-catalog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.digix.challenge.holanda.ms.benefited.catalog.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ms-popular-home" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.digix.challenge.holanda.ms.popular.home.infrastructure.Main" />
@@ -159,6 +162,7 @@
     <list>
       <item itemvalue="Maven.ms-popular-home [install]" />
       <item itemvalue="Maven.desafio-digix-casa-popular [install]" />
+      <item itemvalue="Spring Boot.Main (1)" />
       <item itemvalue="Spring Boot.Main" />
     </list>
   </component>

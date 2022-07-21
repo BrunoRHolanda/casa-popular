@@ -13,6 +13,19 @@ services:
       - "8100:8091"
     depends_on:
       - db
+  ms-benefited-catalog:
+    build: ./ms-benefited-catalog
+    container_name: ms_benefited_catalog
+    entrypoint: dockerize -wait tcp://db:5432 -timeout 40s /entrypoint.sh
+    restart: always
+    volumes:
+      - .:/home/spring/desafio-digix-casa-popular
+    networks:
+      - challenge-network
+    ports:
+      - "8105:8092"
+    depends_on:
+      - mongo
   db:
     build: ./challenge-db
     container_name: challenge_db
@@ -48,6 +61,19 @@ services:
       - "8103:6379"
     networks:
       - challenge-network
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: catalog
+    ports:
+      - "8104:27017"
+    networks:
+      - challenge-network
+
 networks:
   challenge-network:
     driver: bridge

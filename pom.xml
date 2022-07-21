@@ -9,5 +9,6 @@
 
     <modules>
         <module>ms-popular-home</module>
+        <module>ms-benefited-catalog</module>
     </modules>
 </project>

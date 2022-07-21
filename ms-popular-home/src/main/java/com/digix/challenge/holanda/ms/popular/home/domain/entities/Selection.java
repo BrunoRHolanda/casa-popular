@@ -41,14 +41,11 @@ public class Selection implements Entity {
         this.rules.remove(rule.getType());
     }
 
-    public ArrayList<Family> generatePriorityList() {
-        ArrayList<Family> families = new ArrayList<>();
+    public ArrayList<FamilySelection> generatePriorityList() {
 
-        this.familySelections.sort(Comparator.comparingInt(FamilySelection::calculateScore));
+        this.familySelections.sort((o1, o2) -> o2.calculateScore() - o1.calculateScore());
 
-        this.familySelections.forEach(fs -> families.add(fs.getFamily()));
-
-        return families;
+        return this.familySelections;
     }
 
     @Override
