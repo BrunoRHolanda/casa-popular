@@ -1,4 +1,4 @@
-package com.digix.challenge.holanda.ms.popular.home.infrastructure.api.v1;
+package com.digix.challenge.holanda.ms.popular.home.infrastructure.http.api.v1;
 
 
 import com.digix.challenge.holanda.ms.popular.home.application.data.models.*;
