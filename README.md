@@ -63,3 +63,9 @@ make m2-install-catalog
 
 #### Arquitetura
 <img src="https://github.com/BrunoRHolanda/desafio-digix-casa-popular/blob/main/docs/arch.png">
+
+#### Diagrama de Classes
+<img src="https://github.com/BrunoRHolanda/desafio-digix-casa-popular/blob/main/docs/class.png">
+
+#### Diagrama Entidade Relacionamento
+<img src="https://github.com/BrunoRHolanda/desafio-digix-casa-popular/blob/main/docs/der.png">
