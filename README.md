@@ -1,4 +1,4 @@
-# Desafio Digix Casa Popular
+# Casa Popular
 Seleção de famílias aptas a ganharem uma casa popular.
 
 Conta com 2 microserviços um para manter os cadastros das famílias (ms-popular-home - Java 17)e outro para listagem ordenada por pontuação das famílias (ms-benefited-catalog - Java 17).
